@@ -1,0 +1,63 @@
+BATTERY (12V)
+             |
+             v
+          ESP32
+             |
+      MOTOR DRIVER
+          (L298N)
+             |
+       DC MOTORS
+             |
+       ROBOT MOVEMENT
+
+       WATER TANK
+             |
+         WATER PUMP
+             |
+        SPRAY NOZZLE
+             |
+      CLEANING SURFACE
+
+          ESP32
+             |
+           BUZZER
+
+  ##flowchart
+  +---------+
+       |  START  |
+       +---------+
+            |
+            v
+       +---------+
+       | POWER ON|
+       +---------+
+            |
+            v
+    +----------------+
+    | INITIALIZE ESP32|
+    +----------------+
+            |
+            v
+      +-------------+
+      | MOVE ROBOT  |
+      +-------------+
+            |
+            v
+     +--------------+
+     | SPRAY LIQUID |
+     +--------------+
+            |
+            v
+    +----------------+
+    | ROTATE BRUSH   |
+    +----------------+
+            |
+            v
+      +-------------+
+      | STOP ROBOT  |
+      +-------------+
+            |
+            v
+       +---------+
+       |   END   |
+       +---------+
